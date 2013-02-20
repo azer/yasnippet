@@ -1,9 +1,9 @@
 # -*- mode: snippet -*-
-# name: err
+# name: if(error){ callback(error); return; }
 # key: err
 # --
 if(${1:error}){
   callback($1);
   return;
 }
-$2
+$0
