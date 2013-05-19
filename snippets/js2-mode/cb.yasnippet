@@ -1,7 +1,10 @@
 # -*- mode: snippet -*-
-# name: cb
+# name: $1($2, function(){ ...
 # key: cb
 # --
-function(error, $1){
-$0
-}
+$1($2, function(error, ${3:value}){
+
+  if(error) return callback(error);
+
+  $0
+});
