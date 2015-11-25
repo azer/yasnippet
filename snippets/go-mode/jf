@@ -1,0 +1,1 @@
+${1:$(make-go-name yas-text)} $2 \`json:"$1"\`
